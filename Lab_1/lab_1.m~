@@ -1,0 +1,21 @@
+imfinfo('lena.bmp')
+imfinfo('lena.jpg')
+
+image_bmp = imread('lena.bmp');
+image_jpg = imread('lena.jpg');
+
+figure(1)
+imshow(image_bmp)
+figure(2)
+imshow(image_jpg)
+
+image_bmp_gray = rgb2gray(image_bmp);
+
+figure(3)
+imshow(image_bmp_gray)
+
+imwrite(image_bmp_gray, 'lena_gray.bmp')
+
+colormap gray;
+figure(4)
+mesh()
