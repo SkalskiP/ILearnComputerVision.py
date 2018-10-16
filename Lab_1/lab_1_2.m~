@@ -1,2 +1,0 @@
-image_bmp_gray = imread('lena_gray.bmp');
-[X, map] = gray2ind(image_le)
