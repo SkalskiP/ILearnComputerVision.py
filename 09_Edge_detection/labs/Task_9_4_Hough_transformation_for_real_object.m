@@ -66,6 +66,7 @@ figure; imshow(H, []);
 peaks = houghpeaks(H, 8);
 lines = houghlines(BW, theta, rho, peaks);
 
+
 figure; imshow(imdilated);
 hold on;
 for k = 1:length(lines)
