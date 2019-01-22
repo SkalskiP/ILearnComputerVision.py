@@ -6,7 +6,7 @@ clearvars;
 clc;
 
 %% Loading and displaying an image 
-im = imread('../data/ccl2.png');
+I = imread('../data_1/l');
 figure; 
 imshow(im, []);
 title('Original image')

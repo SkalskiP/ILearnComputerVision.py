@@ -34,6 +34,13 @@ subplot(1,3,3);
 imshow(uint8(double(I) .* H));
 title('Hanning window');
 
+figure;
+colormap(jet(64));
+mesh(f1, f2, Hd);
+
+figure;
+colormap(jet(64));
+mesh(f1, f2, H);
 
 %% Gauss filter
 

@@ -62,12 +62,13 @@ BW = edge(imdilated, 'canny');
 figure; imshow(BW);
 
 [H, theta, rho] = hough(BW, 'RhoResolution', 1, 'ThetaResolution', 1);
-figure; imshow(H, []);
-peaks = houghpeaks(H, 8);
-lines = houghlines(BW, theta, rho, peaks);
+% figure; imshow(H, []);
+% peaks = houghpeaks(H, 8);
+% lines = houghlines(BW, theta, rho, peaks);
 
 
-figure; imshow(imdilated);
+figure; 
+imshow(imdilated);
 hold on;
 for k = 1:length(lines)
    xy = [lines(k).point1; lines(k).point2];

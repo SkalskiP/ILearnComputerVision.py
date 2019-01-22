@@ -22,7 +22,8 @@ figure; imshow(H, []);
 peaks = houghpeaks(H, 8);
 lines = houghlines(BW, theta, rho, peaks);
 
-figure; imshow(image);
+figure; 
+imshow(image);
 hold on;
 for k = 1:length(lines)
    xy = [lines(k).point1; lines(k).point2];
